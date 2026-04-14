@@ -1,67 +1,61 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #f4f6f8;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* NAVBAR */
-.navbar {
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 40px;
-    background: #1a1a1a;
+    background: #222;
     color: white;
-    position: sticky;
-    top: 0;
 }
 
-.navbar nav a {
-    margin: 0 15px;
+nav a {
+    margin: 0 10px;
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
-.navbar nav a:hover {
-    color: #ffa726;
+nav a:hover {
+    color: orange;
 }
 
-/* HERO */
-.hero-section {
-    height: 90vh;
-    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
-    position: relative;
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.overlay {
-    position: relative;
+    align-items: center;
     text-align: center;
     color: white;
-    max-width: 600px;
 }
 
-.overlay h2 {
-    font-size: 48px;
+/* DARK OVERLAY BOX */
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero h2 {
+    font-size: 45px;
     margin-bottom: 10px;
 }
 
-.overlay p {
+.hero p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.overlay button {
+/* BUTTON */
+button {
     padding: 12px 25px;
-    background: #ffa726;
+    background: orange;
     border: none;
     color: white;
     cursor: pointer;
@@ -69,50 +63,50 @@ body {
     transition: 0.3s;
 }
 
-.overlay button:hover {
+button:hover {
     transform: scale(1.05);
 }
 
 /* SECTIONS */
 section {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 /* MENU */
-.menu-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+#menu h3 {
+    margin-top: 30px;
+    color: orange;
 }
 
-.menu-box {
-    background: white;
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-grid div {
+    background: #f4f4f4;
     padding: 15px;
     border-radius: 10px;
     width: 200px;
     transition: 0.3s;
 }
 
-.menu-box:hover {
+.menu-grid div:hover {
     transform: translateY(-8px);
 }
 
-.menu-section h3 {
-    margin-top: 30px;
-    color: #ffa726;
-}
-
 /* CONTACT */
-.contact form {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact input,
-.contact textarea {
+input, textarea {
     width: 320px;
     margin: 10px 0;
     padding: 12px;
@@ -120,23 +114,13 @@ section {
     border: 1px solid #ccc;
 }
 
-.contact textarea {
+textarea {
     height: 100px;
-    resize: none;
-}
-
-/* BUTTON */
-button {
-    background: #ffa726;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
 }
 
 /* FOOTER */
 footer {
-    background: #1a1a1a;
+    background: #222;
     color: white;
     padding: 15px;
 }
