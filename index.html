@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Spice Garden</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Spice Garden</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Main font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Cursive font -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header class="navbar">
+<header>
     <h1>🍽 Spice Garden</h1>
     <nav>
         <a href="#home">Home</a>
@@ -19,67 +26,65 @@
     </nav>
 </header>
 
-<section id="home" class="hero-section">
-    <div class="overlay">
+<section id="home" class="hero">
+    <div class="hero-content">
         <h2>Welcome to Spice Garden</h2>
         <p>Experience Delicious Food & Cozy Ambience</p>
         <button onclick="scrollToMenu()">View Menu</button>
     </div>
 </section>
 
-<section id="about" class="about">
+<section id="about">
     <h2>About Us</h2>
-    <p>
-        Spice Garden is a modern restaurant offering fresh ingredients,
-        authentic recipes, and a delightful dining experience.
-    </p>
+    <p>We serve fresh and tasty food made with quality ingredients.</p>
 </section>
 
-<section id="menu" class="menu-section">
+<section id="menu">
     <h2>Our Menu</h2>
 
-    <h3>🍟 Starters</h3>
-    <div class="menu-container">
-        <div class="menu-box">French Fries - ₹120</div>
-        <div class="menu-box">Veg Sandwich - ₹150</div>
-        <div class="menu-box">Chicken Wings - ₹220</div>
+    <h3>Starters</h3>
+    <div class="menu-grid">
+        <div>French Fries - ₹120</div>
+        <div>Veg Sandwich - ₹150</div>
+        <div>Chicken Wings - ₹220</div>
     </div>
 
-    <h3>🍛 Main Course</h3>
-    <div class="menu-container">
-        <div class="menu-box">Chicken Biryani - ₹300</div>
-        <div class="menu-box">Paneer Butter Masala - ₹250</div>
-        <div class="menu-box">Veg Meals - ₹200</div>
+    <h3>Main Course</h3>
+    <div class="menu-grid">
+        <div>Biryani - ₹300</div>
+        <div>Paneer Curry - ₹250</div>
+        <div>Veg Meals - ₹200</div>
     </div>
 
-    <h3>🍕 Fast Food</h3>
-    <div class="menu-container">
-        <div class="menu-box">Burger - ₹150</div>
-        <div class="menu-box">Pizza - ₹250</div>
-        <div class="menu-box">Pasta - ₹200</div>
+    <h3>Fast Food</h3>
+    <div class="menu-grid">
+        <div>Burger - ₹150</div>
+        <div>Pizza - ₹250</div>
+        <div>Pasta - ₹200</div>
     </div>
 
-    <h3>🥤 Beverages</h3>
-    <div class="menu-container">
-        <div class="menu-box">Cold Coffee - ₹100</div>
-        <div class="menu-box">Fresh Juice - ₹120</div>
-        <div class="menu-box">Soft Drink - ₹80</div>
+    <h3>Beverages</h3>
+    <div class="menu-grid">
+        <div>Cold Coffee - ₹100</div>
+        <div>Juice - ₹120</div>
+        <div>Soft Drink - ₹80</div>
     </div>
+
 </section>
 
-<section id="contact" class="contact">
+<section id="contact">
     <h2>Contact Us</h2>
 
     <form id="contactForm">
-        <input type="text" placeholder="Enter your name" required>
-        <input type="email" placeholder="Enter your email" required>
-        <textarea placeholder="Your message"></textarea>
-        <button type="submit">Send Message</button>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Spice Garden | Designed for demo purpose</p>
+    <p>© 2026 Spice Garden</p>
 </footer>
 
 <script src="script.js"></script>
