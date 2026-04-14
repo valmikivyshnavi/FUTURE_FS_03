@@ -1,76 +1,102 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
+    background: #f0f2f5;
 }
 
-/* Navbar */
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
-    background: #222;
+    padding: 15px 40px;
+    background: #111;
     color: white;
-    padding: 15px;
+    position: sticky;
+    top: 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+.navbar nav a {
+    margin: 0 15px;
     color: white;
     text-decoration: none;
 }
 
-/* Hero */
-.hero {
-    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+.navbar nav a:hover {
+    color: #ff9800;
+}
+
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1555992336-03a23c3b9b6b');
     background-size: cover;
-    color: white;
-    padding: 100px;
-    text-align: center;
-}
-
-/* Sections */
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-/* Menu */
-.menu-container {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.card {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 20px;
-    width: 150px;
+.overlay {
+    text-align: center;
+    color: white;
 }
 
-/* Contact */
-input, textarea {
-    display: block;
-    margin: 10px auto;
+.overlay h2 {
+    font-size: 45px;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    background: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.menu-box:hover {
+    transform: translateY(-8px);
+}
+
+.menu-section h3 {
+    margin-top: 30px;
+    color: #ff9800;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    margin: 10px;
     padding: 10px;
-    width: 250px;
 }
 
 button {
-    padding: 10px;
-    background: green;
-    color: white;
+    background: #ff9800;
     border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
 }
 
 footer {
-    background: #222;
+    background: #111;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
 }
